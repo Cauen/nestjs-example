@@ -6,7 +6,7 @@ export const UserSchema = new mongoose.Schema({
   active: { type: Boolean, required: true },
 });
 
-export interface User {
+export interface User extends mongoose.Document {
   id: string;
   name: string;
   age: number;
